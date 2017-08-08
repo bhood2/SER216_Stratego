@@ -15,7 +15,7 @@ public class Client extends Application {
     @Override
     public void start(Stage primaryStage) {
         // (MODEL) Start a new game.
-        new Game();
+        new Game(); 
         
         // (VIEW) Display client GUI on the JavaFX Application thread.
         ClientStage client = new ClientStage();
