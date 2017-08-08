@@ -260,7 +260,8 @@ public class SetupPanel {
                         }
                     }
                     catch (InterruptedException e) {
-                        // TODO Handle this exception somehow...
+                        Thread.currentThread().interrupt();
+                        e.printStackTrace();
                     }
                 }
             }

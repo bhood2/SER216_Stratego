@@ -82,7 +82,7 @@ public class ClientGameManager implements Runnable {
             serverConnect.join();
         }
         catch(InterruptedException e) {
-            // TODO Handle this exception somehow...
+        	Thread.currentThread().interrupt();
             e.printStackTrace();
         }
     }

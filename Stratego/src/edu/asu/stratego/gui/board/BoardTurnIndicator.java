@@ -85,7 +85,7 @@ public class BoardTurnIndicator {
                     }
                 }
                 catch (InterruptedException e) {
-                    // TODO Handle this exception somehow...
+                    Thread.currentThread().interrupt();
                     e.printStackTrace();
                 }
             }

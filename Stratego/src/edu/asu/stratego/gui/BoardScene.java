@@ -68,7 +68,7 @@ public class BoardScene {
         
         
         // TODO Sound test here
-        //PlaySound.playMusic("cornfield", 1);
+        PlaySound.playMusic("cornfield", 1);
         
         // Resize the board.
         final int size = 10;

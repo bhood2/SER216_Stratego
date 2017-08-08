@@ -109,7 +109,7 @@ public class ConnectionScene {
                     playerLogin.wait();    // Wait for connection attempt.
                 }
                 catch (InterruptedException e) {
-                    // TODO Handle this exception somehow...
+                	Thread.currentThread().interrupt();
                     e.printStackTrace();
                 }
             }
