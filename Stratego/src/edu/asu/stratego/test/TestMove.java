@@ -1,6 +1,7 @@
 package edu.asu.stratego.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.awt.Point;
 
@@ -89,5 +90,34 @@ public class TestMove {
 		Piece piece = new Piece(PieceType.SCOUT, PieceColor.BLUE, false);
 		move.setStartPiece(piece);
 		assertEquals(move.getStartPiece(), piece);
+	}
+	
+	@Test
+	public void testRowStart() {
+		assertTrue(move.getRowStart() == start.getX());
+	}
+	
+	@Test
+	public void testColStart() {
+		assertTrue(move.getColStart() == start.getY());
+	}
+	
+	@Test
+	public void testEndPiece() {
+		Piece piece = new Piece(PieceType.BOMB, PieceColor.BLUE, false);
+		move.setEndPiece(piece);
+		assertEquals(move.getEndPiece(), piece);
+	}
+	
+	@Test
+	public void testAttackWin() {
+		move.setAttackWin(true);
+		assertEquals(move.isAttackWin(), true);
+	}
+	
+	@Test
+	public void testDefendWin() {
+		move.setDefendWin(false);
+		assertEquals(move.isDefendWin(), false);
 	}
 }
