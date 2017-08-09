@@ -159,7 +159,7 @@ public class ClientGameManager implements Runnable {
                 });
             }
             catch (InterruptedException | IOException | ClassNotFoundException e) {
-            	e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
