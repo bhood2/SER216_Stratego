@@ -1,8 +1,3 @@
-/*
- * NAME: Michael Hodges
- * PID: A12653260
- * LOGIN: CS12WHH
- */
 package edu.asu.stratego.test;
 
 import org.junit.runner.RunWith;

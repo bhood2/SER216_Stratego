@@ -27,8 +27,8 @@ public class TestGame {
 		player.setNickname("Gandalf");
 		
 		opponent = new Player();
-		opponent.setColor(PieceColor.RED);
-		opponent.setNickname("Gandalf");
+		opponent.setColor(PieceColor.BLUE);
+		opponent.setNickname("Sam");
 	}
 	
 	@After
