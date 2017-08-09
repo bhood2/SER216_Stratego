@@ -63,11 +63,10 @@ public class BoardScene {
          */
         
         // Set the background color (turn indicator).
-        BoardTurnIndicator indicator = new BoardTurnIndicator();
+        //BoardTurnIndicator indicator = new BoardTurnIndicator();
         Rectangle background = BoardTurnIndicator.getTurnIndicator();
         
         
-        // TODO Sound test here
         PlaySound.playMusic("cornfield", 1);
         
         // Resize the board.
