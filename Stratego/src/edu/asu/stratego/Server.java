@@ -39,8 +39,13 @@ public class Server {
                 session.setDaemon(true);
                 session.start();
             }
-        }
+        } 
         
-        finally { listener.close(); }
+        finally { 
+        	
+        	// Close the listener if it's not null 
+        	if (listener != null)
+        		listener.close(); 
+        }
     }
 }

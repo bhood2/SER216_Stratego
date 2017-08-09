@@ -117,7 +117,6 @@ public class ClientGameManager implements Runnable {
                 Game.getPlayer().setColor(PieceColor.RED);
         }
         catch (IOException | ClassNotFoundException e) {
-            // TODO Handle this exception somehow...
             e.printStackTrace();
         }
     }
@@ -175,7 +174,6 @@ public class ClientGameManager implements Runnable {
         try {
 			Game.setStatus((GameStatus) fromServer.readObject());
 		} catch (ClassNotFoundException | IOException e1) {
-			// TODO Handle this somehow...
 			e1.printStackTrace();
 		}
 
