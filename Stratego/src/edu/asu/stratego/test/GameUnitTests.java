@@ -75,7 +75,7 @@ public class GameUnitTests
 			result = rScout.getPieceType().attack(bScout.getPieceType());
 			assertTrue(result == BattleOutcome.DRAW);
 		
-			//Scout attacking enemy Sergent
+			//Scout attacking enemy Sergeant
 			result = bScout.getPieceType().attack(rSarge.getPieceType());
 			assertTrue(result == BattleOutcome.LOSE);
 			//Sergeant attacking player
@@ -126,17 +126,17 @@ public class GameUnitTests
 	}
 
 	@Test
-	public void sergentTest() 
+	public void sergeantTest() 
 		{
 		
-			//Scout attacking enemy Sergent
+			//Scout attacking enemy Sergeant
 			result = bSarge.getPieceType().attack(rScout.getPieceType());
 			assertTrue(result == BattleOutcome.WIN);
 			//Scout attacking player
 			result = rScout.getPieceType().attack(bSarge.getPieceType());
 			assertTrue(result == BattleOutcome.LOSE);
 		
-			//Sergeant attacking enemy Sergent
+			//Sergeant attacking enemy Sergeant
 			result = bSarge.getPieceType().attack(rSarge.getPieceType());
 			assertTrue(result == BattleOutcome.DRAW);
 			//Sergeant attacking player
@@ -190,14 +190,14 @@ public class GameUnitTests
 	public void lieutenantTest() 
 		{
 		
-			//Lieutenant attacking enemy Sergent
+			//Lieutenant attacking enemy Sergeant
 			result = bLT.getPieceType().attack(rScout.getPieceType());
 			assertTrue(result == BattleOutcome.WIN);
 			//Scout attacking player
 			result = rScout.getPieceType().attack(bLT.getPieceType());
 			assertTrue(result == BattleOutcome.LOSE);
 		
-			//Lieutenant attacking enemy Sergent
+			//Lieutenant attacking enemy Sergeant
 			result = bLT.getPieceType().attack(rSarge.getPieceType());
 			assertTrue(result == BattleOutcome.WIN);
 			//Lieutenant attacking player
@@ -251,14 +251,14 @@ public class GameUnitTests
 	public void captainTest() 
 		{
 		
-		//Lieutenant attacking enemy Sergent
+		//Lieutenant attacking enemy Sergeant
 		result = bCpt.getPieceType().attack(rScout.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Scout attacking player
 		result = rScout.getPieceType().attack(bCpt.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
-		//Captain attacking enemy Sergent
+		//Captain attacking enemy Sergeant
 		result = bCpt.getPieceType().attack(rSarge.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Sergeny attacking player
@@ -312,17 +312,17 @@ public class GameUnitTests
 	public void majorTest() 
 		{
 		
-		//Major attacking enemy Sergent
+		//Major attacking enemy Sergeant
 		result = bMajor.getPieceType().attack(rScout.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Scout attacking player
 		result = rScout.getPieceType().attack(bMajor.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
-		//Major attacking enemy Sergent
+		//Major attacking enemy Sergeant
 		result = bMajor.getPieceType().attack(rSarge.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
-		//Sergeny attacking player
+		//Sergeant attacking player
 		result = rSarge.getPieceType().attack(bMajor.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
@@ -372,17 +372,17 @@ public class GameUnitTests
 	@Test
 	public void colonelTest() {
 		
-		//Colonel attacking enemy Sergent
+		//Colonel attacking enemy Sergeant
 		result = bCol.getPieceType().attack(rScout.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Scout attacking player
 		result = rScout.getPieceType().attack(bCol.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
-		//Colonel attacking enemy Sergent
+		//Colonel attacking enemy Sergeant
 		result = bCol.getPieceType().attack(rSarge.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
-		//Sergeny attacking player
+		//Sergeant attacking player
 		result = rSarge.getPieceType().attack(bCol.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
@@ -433,17 +433,17 @@ public class GameUnitTests
 	public void generalTest() 
 		{
 		
-		//General attacking enemy Sergent
+		//General attacking enemy Sergeant
 		result = bGnrl.getPieceType().attack(rScout.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Scout attacking player
 		result = rScout.getPieceType().attack(bGnrl.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
-		//General attacking enemy Sergent
+		//General attacking enemy Sergeant
 		result = bGnrl.getPieceType().attack(rSarge.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
-		//Sergeny attacking player
+		//Sergeant attacking player
 		result = rSarge.getPieceType().attack(bGnrl.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
@@ -494,17 +494,17 @@ public class GameUnitTests
 	public void marshalTest() 
 		{
 		
-		//Marshal attacking enemy Sergent
+		//Marshal attacking enemy Sergeant
 		result = bMarsh.getPieceType().attack(rScout.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
 		//Scout attacking player
 		result = rScout.getPieceType().attack(bMarsh.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		
-		//Marshal attacking enemy Sergent
+		//Marshal attacking enemy Sergeant
 		result = bMarsh.getPieceType().attack(rSarge.getPieceType());
 		assertTrue(result == BattleOutcome.WIN);
-		//Sergeny attacking player
+		//Sergeant attacking player
 		result = rSarge.getPieceType().attack(bMarsh.getPieceType());
 		assertTrue(result == BattleOutcome.LOSE);
 		

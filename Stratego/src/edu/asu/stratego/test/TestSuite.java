@@ -10,7 +10,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ GameUnitTests.class, SpecialUnitTest.class, BombTest.class })
+@SuiteClasses({ GameUnitTests.class, SpecialUnitTest.class, BombTest.class, ServerGameManagerTest.class,
+	ClientGameManagerTest.class})
 public class TestSuite {
 
 }
